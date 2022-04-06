@@ -37,13 +37,13 @@
 // |   `   |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |   =   |
 // |  "["  | HOME|PG UP|  ^   |PG DN |   K  |                   |      |       |   ^   |      |       |  "|"  |
 // |  CAPS | END |  <- |  v   |  ->  |   J  |                   |      |   <-  |   v   |  ->  |       | ENTER |
-// |       |RAISE|ENTER| "["  | "]"  | BSPC | TOGGLE |  | EP ON |      |       |       |      |       |       |
+// |       |     |ENTER| "["  | "]"  | BSPC | TOGGLE |  | EP ON |      |       |       |      |       |       |
 //                     |      |      |      |  ENTER |  |       |      |       |       |
 			bindings = <
 &kp GRAVE &kp F1    &kp F2     &kp F3   &kp F4     &kp F5                       &kp F6 &kp F7   &kp F8    &kp F9     &kp F10  &kp EQUAL
 &kp LBKT  &kp HOME  &kp PG_UP  &kp UP   &kp PG_DN  &kp K                        &trans &trans   &kp UP    &trans     &trans   &kp PIPE
 &kp CAPS  &kp END   &kp LEFT   &kp DOWN &kp RIGHT  &kp J                        &trans &kp LEFT &kp DOWN  &kp RIGHT  &trans   &kp RET
-&trans    &mo 2     &kp RET    &kp LBKT &kp RBKT   &kp BSPC &out OUT_TOG &ext_power EP_ON &trans &trans &trans &trans &trans  &trans
+&trans    &trans     &kp RET    &kp LBKT &kp RBKT   &kp BSPC &out OUT_TOG &ext_power EP_ON &trans &trans &trans &trans &trans  &trans
                                &trans   &trans     &trans   &kp RET      &trans &trans &trans   &trans
 			>;
 
