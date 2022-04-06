@@ -35,15 +35,15 @@
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |   `   |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |   =   |
-// |  "["  |     |PG UP|  ^   |PG DN |   K  |                   |      |       |   ^   |      |       |  "|"  |
-// |  CAPS | DEL |  <- |  v   |  ->  |   J  |                   |      |   <-  |   v   |  ->  |       | ENTER |
-// |       | CTRL|ENTER| "["  | "]"  | BSPC | TOGGLE |  | EP ON |      |       |       |      |       |       |
+// |  "["  | HOME|PG UP|  ^   |PG DN |   K  |                   |      |       |   ^   |      |       |  "|"  |
+// |  CAPS | END |  <- |  v   |  ->  |   J  |                   |      |   <-  |   v   |  ->  |       | ENTER |
+// |       |RAISE|ENTER| "["  | "]"  | BSPC | TOGGLE |  | EP ON |      |       |       |      |       |       |
 //                     |      |      |      |  ENTER |  |       |      |       |       |
 			bindings = <
 &kp GRAVE &kp F1    &kp F2     &kp F3   &kp F4     &kp F5                       &kp F6 &kp F7   &kp F8    &kp F9     &kp F10  &kp EQUAL
-&kp LBKT  &trans    &kp PG_UP  &kp UP   &kp PG_DN  &kp K                        &trans &trans   &kp UP    &trans     &trans   &kp PIPE
-&kp CAPS  &kp DEL   &kp LEFT   &kp DOWN &kp RIGHT  &kp J                        &trans &kp LEFT &kp DOWN  &kp RIGHT  &trans   &kp RET
-&trans    &kp LCTRL &kp RET    &kp LBKT &kp RBKT   &kp BSPC &out OUT_TOG &ext_power EP_ON &trans &trans &trans &trans &trans  &trans
+&kp LBKT  &kp HOME  &kp PG_UP  &kp UP   &kp PG_DN  &kp K                        &trans &trans   &kp UP    &trans     &trans   &kp PIPE
+&kp CAPS  &kp END   &kp LEFT   &kp DOWN &kp RIGHT  &kp J                        &trans &kp LEFT &kp DOWN  &kp RIGHT  &trans   &kp RET
+&trans    &mo 2     &kp RET    &kp LBKT &kp RBKT   &kp BSPC &out OUT_TOG &ext_power EP_ON &trans &trans &trans &trans &trans  &trans
                                &trans   &trans     &trans   &kp RET      &trans &trans &trans   &trans
 			>;
 
@@ -54,14 +54,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |   =   |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |   -   |
 // |       |     |  /  |   7  |   8  |   9  |                   |   7  |   8   |   9   |   -  |       |   \   |
-// |  HOME |     |  *  |   4  |   5  |   6  |                   |   4  |   5   |   6   |   +  |   ^   | ENTER |
-// |  END  |     |  -  |   1  |   2  |   3  |        |  | RESET |   1  |   2   |   3   | <-   |   v   |  ->   |
+// |       |     |  *  |   4  |   5  |   6  |                   |   4  |   5   |   6   |   +  |   ^   | ENTER |
+// |       |     |  -  |   1  |   2  |   3  |        |  | RESET |   1  |   2   |   3   | <-   |   v   |  ->   |
 //                     |   +  |   0  |   .  |  ENTER |  |       |      |   0   |   .   |
 			bindings = <
 &kp EQUAL &kp F1    &kp F2          &kp F3      &kp F4  &kp F5                    &kp F6   &kp F7   &kp F8    &kp F9      &kp F10  &kp MINUS
 &trans    &trans    &kp FSLH        &kp N7      &kp N8  &kp N9                    &kp N7   &kp N8   &kp N9    &kp MINUS   &trans   &kp BSLH
-&kp HOME  &trans    &kp KP_MULTIPLY &kp N4      &kp N5  &kp N6                    &kp N4   &kp N5   &kp N4    &kp KP_PLUS &kp UP   &kp RET
-&kp END   &trans    &kp MINUS       &kp N1      &kp N2  &kp N3   &trans  &reset   &kp N1   &kp N2   &kp N3    &kp LEFT    &kp DOWN &kp RIGHT
+&trans    &trans    &kp KP_MULTIPLY &kp N4      &kp N5  &kp N6                    &kp N4   &kp N5   &kp N4    &kp KP_PLUS &kp UP   &kp RET
+&trans    &trans    &kp MINUS       &kp N1      &kp N2  &kp N3   &trans  &reset   &kp N1   &kp N2   &kp N3    &kp LEFT    &kp DOWN &kp RIGHT
                                     &kp KP_PLUS &kp N0  &kp DOT  &kp RET &trans   &trans   &kp N0   &kp DOT
 			>;
 
